@@ -1,5 +1,5 @@
 # Coffee Shop Backend
-
+All backend code follows [PEP8 style guidelines](https://www.python.org/dev/peps/pep-0008/).
 ## Getting Started
 
 ### Installing Dependencies
