@@ -102,7 +102,7 @@ def update_drink(jwt, drink_id):
     if recipe and (not isinstance(recipe, list)):
         abort(400)
     elif recipe and isinstance(recipe, list):
-        drink.recipe = json.dumps(recipe)
+        drink.recipe = recipe if type(recipe) == str else json.dumps(recipe)
 
     # update title if the request contains title information
     if title:
